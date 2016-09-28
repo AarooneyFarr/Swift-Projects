@@ -6,14 +6,10 @@ import XCPlayground
 var str = "Hello, playground"
 
 var DynamicView = UIView(frame: CGRectMake(200,200,200,200))
+var MainView = UIView(frame: CGRectMake(200,200,200,200))
+var LastView = UIView(frame: CGRectMake(200,200,200,200))
 
-var myFirstButton = UIButton(type: .Custom) as! UIButton
-myFirstButton.setTitleColor(UIColor.blueColor(), forState: .Normal)
-myFirstButton.frame=CGRectMake(100,100,100,100)
-myFirstButton.backgroundColor = UIColor.blueColor()
-myFirstButton.setTitle("This is a Button", forState: .Normal)
-myFirstButton.layer.cornerRadius=10
-myFirstButton.layer.borderWidth=5
+
 
 
 
@@ -23,7 +19,34 @@ DynamicView.layer.borderWidth=20
 
 
 DynamicView
-myFirstButton
 
-XCPShowView(view: "View Title",myFirstButton)
+
+
+MainView.backgroundColor = UIColor.greenColor()
+MainView.layer.cornerRadius=500
+MainView.layer.borderWidth=20
+MainView
+
+LastView.backgroundColor = UIColor.blueColor()
+LastView.layer.cornerRadius=200
+LastView.layer.borderWidth=20
+
+LastView
+
+
+
+let button1 = UIButton()
+button1.frame = CGRectMake(0,0,100,100)
+
+
+button1
+
+let date = UIDatePicker()
+date
+
+
+
+
+
+
 
