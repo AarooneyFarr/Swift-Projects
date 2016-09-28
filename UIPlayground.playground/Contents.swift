@@ -48,6 +48,13 @@ let label1 = UILabel()
 label1.text = "hello"
 label1
 
+let label2 = UILabel()
+label2.text = "hello2"
+label2
 
+
+let label3 = UILabel()
+label3.text = "hello3"
+label3
 
 
