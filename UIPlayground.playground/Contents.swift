@@ -44,8 +44,9 @@ button1
 let date = UIDatePicker()
 date
 
-
-
+let label1 = UILabel()
+label1.text = "hello"
+label1
 
 
 
