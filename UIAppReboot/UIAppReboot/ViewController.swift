@@ -10,8 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var DynamicView = UIView(frame: CGRectMake(100,100,100,100))
-    DynamicView.backgroundColor = UIColor.greenColor()
+  
     
     
     override func viewDidLoad() {
