@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gDM-4Y-JHL">
+                                <rect key="frame" x="260" y="467" width="80" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Work">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="toAcademics:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c3u-nR-6Uf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KeP-UX-vL8">
+                                <rect key="frame" x="274" y="505" width="52" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Family">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="toFamily:" destination="BYZ-38-t0r" eventType="touchUpInside" id="49l-fS-6EN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1YA-b9-Bln">
+                                <rect key="frame" x="265" y="429" width="70" height="30"/>
+                                <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Hobbies">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="toHobbies:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2tO-qj-Br1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LcJ-xr-ivK">
+                                <rect key="frame" x="254" y="391" width="92" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Background">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="toBackground:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pLg-R1-HLp"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ME" translatesAutoresizingMaskIntoConstraints="NO" id="KIf-OF-Kwc">
+                                <rect key="frame" x="180" y="42" width="240" height="288"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40318170833152334" green="0.71980299601686515" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <segue destination="aW2-PR-w0M" kind="show" identifier="toBackgroundFromMain" id="CKH-Bt-wGh"/>
+                        <segue destination="1yk-N1-e3l" kind="show" identifier="toFamilyFromMain" id="w6f-C4-S85"/>
+                        <segue destination="7aJ-xa-tHF" kind="show" identifier="toAcademicsFromMain" id="YPH-aH-rWb"/>
+                        <segue destination="IGl-S4-ndn" kind="show" identifier="toHobbiesFromMain" id="9Ls-qc-b08"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="635" y="418"/>
+        </scene>
+        <!--Hobbies-->
+        <scene sceneID="PPl-Qg-vmt">
+            <objects>
+                <viewController id="IGl-S4-ndn" customClass="Hobbies" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WzW-EF-Bk9"/>
+                        <viewControllerLayoutGuide type="bottom" id="HtK-3f-dLi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jYW-Nb-Dv0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rus-ua-kE8">
+                                <rect key="frame" x="20" y="20" width="46" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.4031817083" green="0.71980299599999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="toMain:" destination="IGl-S4-ndn" eventType="touchUpInside" id="f7P-K5-RVY"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Chemistry" translatesAutoresizingMaskIntoConstraints="NO" id="hgU-Hi-sfJ">
+                                <rect key="frame" x="20" y="75" width="240" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Sports" translatesAutoresizingMaskIntoConstraints="NO" id="MlF-QS-XO5">
+                                <rect key="frame" x="340" y="75" width="240" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="programming" translatesAutoresizingMaskIntoConstraints="NO" id="rIy-tq-Koz">
+                                <rect key="frame" x="180" y="211" width="240" height="128"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="I am interested in a wide range of activities, including but not limited to, Chemistry, all competitive sports, and technology." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DlX-h1-hpX">
+                                <rect key="frame" x="180" y="387" width="240" height="128"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.41960784313725491" green="0.0" blue="0.42352941176470588" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="toMainFromHobbies" id="Xcb-Qi-7qd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1sw-UX-qfN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-211" y="1181"/>
+        </scene>
+        <!--Background-->
+        <scene sceneID="Qvh-88-pPE">
+            <objects>
+                <viewController id="aW2-PR-w0M" customClass="Background" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dzW-kM-xbj"/>
+                        <viewControllerLayoutGuide type="bottom" id="d68-JJ-Qbw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aeg-uc-R2F">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gzv-IR-rT2">
+                                <rect key="frame" x="20" y="20" width="46" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="toMain:" destination="aW2-PR-w0M" eventType="touchUpInside" id="L7f-Yb-H6j"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="St-George-Utah-72" translatesAutoresizingMaskIntoConstraints="NO" id="97w-cZ-3cf">
+                                <rect key="frame" x="20" y="82" width="240" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Draper-UT" translatesAutoresizingMaskIntoConstraints="NO" id="kOq-sP-yfT">
+                                <rect key="frame" x="340" y="82" width="240" height="128"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SIL-zI-DTM">
+                                <rect key="frame" x="180" y="394" width="240" height="128"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <string key="text">I have lived in nine places and moed 11 times. These are a few of the places I hae lived. Other places include St. George, Los Angeles, Las Vegas, San Francisco, Tetonia, and Lindon.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lasvegas" translatesAutoresizingMaskIntoConstraints="NO" id="9eP-jo-Cpj">
+                                <rect key="frame" x="180" y="218" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="toMainFromBackground" id="WGQ-Zi-V45"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="min-kB-RKJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="950" y="1403"/>
+        </scene>
+        <!--Academics-->
+        <scene sceneID="HPd-yN-pg4">
+            <objects>
+                <viewController id="7aJ-xa-tHF" customClass="Academics" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Coa-RP-L5b"/>
+                        <viewControllerLayoutGuide type="bottom" id="ygz-q9-qwz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="M03-Gb-HgC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5O6-cB-9Wy">
+                                <rect key="frame" x="20" y="20" width="46" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="toMain:" destination="7aJ-xa-tHF" eventType="touchUpInside" id="3HG-RB-rlB"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Airport" translatesAutoresizingMaskIntoConstraints="NO" id="rEa-T7-RcR">
+                                <rect key="frame" x="20" y="66" width="240" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Camp Tracy" translatesAutoresizingMaskIntoConstraints="NO" id="7Hy-9p-wk9">
+                                <rect key="frame" x="340" y="66" width="240" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Treehouse" translatesAutoresizingMaskIntoConstraints="NO" id="FVd-iT-Vx3">
+                                <rect key="frame" x="340" y="202" width="240" height="128"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="U52-pA-VSY">
+                                <rect key="frame" x="180" y="372" width="240" height="128"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <string key="text">I have had four jobs. Night Manager at Draper Elementary, Lifeguard at Treehouse and Camp Tracy, and cleaner at the SLC airport.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Draper Elementary" translatesAutoresizingMaskIntoConstraints="NO" id="5jt-nd-JEY">
+                                <rect key="frame" x="20" y="202" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98431372549019602" green="0.0" blue="0.019607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="toMainFromAcademics" id="kdv-hu-TyX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yAJ-mp-uRf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1070" y="-393"/>
+        </scene>
+        <!--Family Screen-->
+        <scene sceneID="ige-La-Bvg">
+            <objects>
+                <viewController id="1yk-N1-e3l" customClass="FamilyScreen" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2hX-ji-zPr"/>
+                        <viewControllerLayoutGuide type="bottom" id="bRe-VO-wnY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lPN-PL-CqR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fqv-Oo-nwT">
+                                <rect key="frame" x="20" y="20" width="46" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="toMain:" destination="1yk-N1-e3l" eventType="touchUpInside" id="2qZ-GI-WPX"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="famfinal" translatesAutoresizingMaskIntoConstraints="NO" id="QYy-qT-mg9">
+                                <rect key="frame" x="117" y="60" width="367" height="206"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="i8v-O2-5mt">
+                                <rect key="frame" x="180" y="330" width="240" height="128"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <string key="text">This is my family. I am on the far right of the picture. My siblings are oldest to youngest are: Rachel, Me, Thomas, Spencer, Harrison, and Rebekah.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="toMainFromFamily" id="ahV-6I-xMf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2M9-7Z-3at" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1322" y="418"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Airport" width="268" height="188"/>
+        <image name="Camp Tracy" width="275" height="183"/>
+        <image name="Chemistry" width="300" height="168"/>
+        <image name="Draper Elementary" width="277" height="182"/>
+        <image name="Draper-UT" width="1024" height="768"/>
+        <image name="ME" width="311" height="457"/>
+        <image name="Sports" width="299" height="168"/>
+        <image name="St-George-Utah-72" width="535" height="247"/>
+        <image name="Treehouse" width="206" height="244"/>
+        <image name="famfinal" width="2757" height="2136"/>
+        <image name="lasvegas" width="309" height="163"/>
+        <image name="programming" width="275" height="183"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="ahV-6I-xMf"/>
+    </inferredMetricsTieBreakers>
+</document>
